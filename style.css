@@ -1,0 +1,148 @@
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#rating {
+    color: green;
+}
+
+#reviews, #rate {
+    text-decoration: none;
+}
+
+#uploadImage {
+    color: white;
+    background-color: green;
+    font-size: medium;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+#navSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+#overview {
+    border-bottom: 1px solid red;
+}
+
+#navItems {
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+
+#imagesAndColors {
+    display: flex;
+    column-gap: 0px;
+}
+
+#bigImageSection {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#smallImageSection img {
+    width: 100%;
+}
+
+#smallImageSection img:hover {
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+@media only screen and (max-width: 768px) {
+    #leftArrow {
+        width: 5%;
+        max-height: 15px;
+    }
+    
+    #bigImage {
+        width: 80%;
+        max-height: 120px;
+    }
+    
+    #rightArrow {
+        width: 5%;
+        max-height: 15px;
+    }
+    
+    #smallImageSection {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #leftArrow {
+        width: 5%;
+        max-height: 30px;
+    }
+    
+    #bigImage {
+        width: 80%;
+        max-height: 240px;
+    }
+    
+    #rightArrow {
+        width: 5%;
+        max-height: 30px;
+    }
+    
+    #smallImageSection {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1025px){
+    #leftArrow {
+        width: 5%;
+        max-height: 50px;
+    }
+    
+    #bigImage {
+        width: 80%;
+        max-height: 400px;
+    }
+    
+    #rightArrow {
+        width: 5%;
+        max-height: 50px;
+    }
+    
+    #smallImageSection {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
+}
